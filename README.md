@@ -1,7 +1,7 @@
-# AMM Arbitrageur
+# BSC套利
 
 ## 部署合约
-1. 编辑 `hardhat.config.ts` 中的网络配置。（目前都是 BSC 的地址）。
+1. 第10、11行，编辑 `hardhat.config.ts` 中的网络配置。
 
 2. 拷贝私钥配置文件：
 
@@ -11,11 +11,13 @@ $ cp .secret.ts.sample .secret.ts
 
 3. 填入部署账户的私钥和地址信息。然后运行脚本部署合约：
 
-
 ```bash
-$ hardhat --network bsc run scripts/deploy.ts
-
+主网：
+$ npx hardhat --network bsc run scripts/deploy.ts
+测试网：
+$ npx hardhat --network bscTestnet run scripts/deploy.ts
 ```
+部署完成会显示合约地址
 
 4. 编辑 `bot/config.ts` 中的13行，填入刚才部署好的合约地址；// your contract address
 17行，自己去bscscan注册一个账户，填入API key

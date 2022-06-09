@@ -10,7 +10,7 @@ interface Config {
   concurrency: number;
 }
 
-const contractAddr = '0x40F02A0852c7B2fbf8d8Dd8F4bAF269c385E3CdB'; // flash bot contract address
+const contractAddr = '0x7161C66C2d25e7C8bb1198b4983C54DdfBd25d4b'; // flash bot contract address
 const gasPrice = utils.parseUnits('10', 'gwei');
 const gasLimit = 300000;
 
